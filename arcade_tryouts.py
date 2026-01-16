@@ -8,8 +8,7 @@ class MyGame(arcade.Window):
         super().__init__(width, height, title)
     def on_draw(self):
         arcade.draw_circle_filled(300,250,100, (0,255,255))
-        arcade.draw_triangle_outline(100,100,200,100,150,200,(255,0,0))
-
+        arcade.draw_text("japan nega", 150, 150, (255,0,0), )
 
 def main():
 
