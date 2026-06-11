@@ -1,9 +1,12 @@
-import arcade
+"""
+Ce code présente un paysage tropical qui m'aide à comprendre comment dessiner dans Arcade en utilisant toutes les formes de la bibliothèque
+RYAN SINDHU 404
+"""import arcade
 
 # Window dimensions
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
-SCREEN_TITLE = "TP5/TP6: Tropical Beach Scene"
+SCREEN_TITLE = "TP5 plage tropicale"
 
 
 def dessiner_decor_base():
@@ -51,7 +54,7 @@ def dessiner_palmier():
 
     Uses: polygon.
     """
-    # Palm tree trunk made with a 4-point polygon (tilted quadrilateral)
+    #tree
     trunk_points = [(80, 80), (110, 80), (160, 380), (140, 380)]
 
     arcade.draw_polygon_filled(
@@ -64,13 +67,10 @@ def dessiner_palmier():
         color=arcade.color.FOREST_GREEN
     )
 
-    # leave 2
     arcade.draw_polygon_filled(
         point_list=[(160, 385), (155, 365), (200, 340), (260, 340)],
         color=arcade.color.FOREST_GREEN
     )
-
-    # leave 3
     arcade.draw_polygon_filled(
         point_list=[(135, 380), (165, 380), (185, 420), (170, 460)],
         color=arcade.color.FOREST_GREEN
@@ -84,10 +84,9 @@ def dessiner_crab():
         width=50, height=30,
         color=(255, 0, 0)
     )
-    # crab hand
+    # crab hands
     arcade.draw_triangle_filled(x1=310, y1=65, x2=325, y2=85, x3=325, y3=50, color=arcade.color.RED)
 
-    # crab hand
     arcade.draw_triangle_filled(x1=390, y1=65, x2=375, y2=85, x3=375, y3=50, color=arcade.color.RED)
 
 
